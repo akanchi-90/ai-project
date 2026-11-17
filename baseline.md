@@ -1,1 +1,16 @@
 # Baseline skills (1–5)
+Python 0, 
+Git 2, 
+maths 4, 
+classical ML 0,  
+deep learning 0, 
+PyTorch 0, 
+transformers 0, 
+LLM APIs 0, 
+RAG 0, 
+agents 2, 
+evals 1, 
+fine-tuning 1, 
+MLOps 0, 
+cloud 1, 
+system design 3
