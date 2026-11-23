@@ -1,5 +1,10 @@
 # this is a sample code for hello world
 name = input("What's up ? ")
+name = name.strip()
+name = name.capitalize()
+name = name.title()
 print("Hello,world") 
 print("Hello"+ name)
 print("Hello",name)
+print ("Hello \"Ashish \""  )
+print (f"Hello {name}")
