@@ -23,3 +23,22 @@
 - Connected GitHub to Claude; set up a daily 7:30 AM ET recap email (cloud routine + Gmail)
 - Learned: a terminal reads its startup files only when it opens; PATH is the list of folders searched for commands
 - Next: CS50P lectures 0–1 and problem sets 0–1 (plan Day 2)
+
+## Day 2 (cont.) - 2026-11-23
+- Topic: CS50P lectures 0–1 (functions, variables, types, conditionals, exceptions)
+- Wrote day2.py (input + int), day2problems.py (20-question quiz), day2compare.py
+- Q: Why "can't open file week01/day2.py"? → I was already inside week-01, there was a typo (week01), and the file wasn't created yet; check with pwd / ls
+- Q: int vs float vs round? → int() chops the decimal, float keeps it, round() rounds; exact .5 rounds to the even number (round(2.5)=2, round(1.5)=2)
+- Q: What are f"{x:.2f}" and f"{x:,}"? → format codes: 2 decimals / thousands commas; round() gives a number, f-string gives text for display
+- Q: Function vs class vs method? → function: name(); class: blueprint/type (int, str); method: function on an object, obj.name()
+- Q: What is scope? → assigning inside a function makes a local variable; the global is untouched (UnboundLocalError trap); pass in + return out instead of `global`
+- Q: What does return do? → hands a value back and exits; no return gives None; the value is lost unless saved (count = bump(count))
+- Q: What is `**`? → power, groups right to left: 2 ** 3 ** 2 = 512; -2 ** 2 = -4
+- Q: What is `//`? → floor division, rounds down: 7 // 2 = 3, -7 // 2 = -4
+- Q: Is the `.` operator only for strings? → no, every type has methods ((2.5).is_integer(), dir(int))
+- Q: if/elif/else, and/or, match? → first True branch wins; and/or are lowercase; match/case with | and _ for exact values
+- Q: Why did print(input(int("Age: ")) + 25) fail? → calls run inside-out; it should be int(input(...))
+- Covered lecture notes: exceptions (try/except/else/pass, get_int loop), main() pattern, default params, Pythonic `return n % 2 == 0`
+- Quiz misses to review: T1/T10 round-half-even, T2 `**` order, T4 "5"*3, T6 unsaved return, T9 0.1+0.2 != 0.3
+- Committed: day1.py, day2.py, day2problems.py, day2compare.py ("Day 2", "Day 1")
+- Next (Day 3): finish quiz T3/T5/T7/T8 + E3 fixes; exercises C1–C4, X1–X3, day2final.py; CS50P problem sets 0–1
